@@ -1,3 +1,4 @@
+@import url('normalize.css');
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -13,7 +14,10 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color:#f2f2f2 ;
+  position: relative;
   /* выше установили ограничения для секции */
+  display: flex;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -28,4 +32,63 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo_place_header{
+  display:block;
+  position:absolute;
+  top: 10px;
+  left: 64px;
+  width:183px;
+  height:32px;
+}
+.title_place_header{
+  display:block;
+  width:730px;
+  font-size:102px;
+  line-height:96px;
+  z-index:2;
+  align-self:center;
+  position:absolute;
+  left:64px;
+  margin:0px;
+  font-style:bold;
+}
+.subtitle_place_header{
+  display:block;
+  font-size: 18;
+  width: 388px;
+  position:absolute;
+  bottom:30px;
+  left:64px;
+  line-height:25px;
+  z-index:3;
+  margin:0px;
+  font-style:normal;
+}
+.subtitle_header_link
+{
+  text-decoration: none;
+  line-height:25px;
+  font-size: 18;
+  z-index:2;
+
+}
+.main-illustration_place_header{
+  display:block;
+  width: 765px;
+  height: 608px;
+  z-index:1;
+  position:absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.square-pic_place_header{
+  display:block;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position:absolute;
+  top:64px;
+  right: 0px;
 }
